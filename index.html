@@ -1,31 +1,32 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Museu Nacional</title>
+        <title>
+            Museu Nacional
+        </title>
         <meta charset="utf-8">
-        <!--Normalize CSS-->
+         <!--Normalize css-->
         <link rel="stylesheet" type="text/css" href="css/normalize.css">
-        <!--Estilo customizado-->
-        <link rel="stylesheet" type="text/css" href="css/estilo.css">
+         <!--estilo costumizado-->
+         <link rel="stylesheet" type="text/css" href="css/estilo.css">
 
-        <!--[if lt IE 9]>
-	    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+         <!--[if lt IE 9]>
+	            <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
         <![endif]-->
-
     </head>
     <body>
-<!--Inicio container-->
+<!--incio container-->
         <div id="container">
-<!--Inicio header-->
+<!--inicio header-->
             <header>
                 <div id="logo">
-                    <h1><a href="">Museu Nacional</a></h1>
+                <h1><a href="img/logo.png">Museu Nacional</a></h1>
                 </div>
 <!--inicio nav-->
                 <nav>
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Exposições</a></li>
+                        <li><a href="#">home</a></li>
+                        <li><a href="#">Exposição</a></li>
                         <li><a href="#">Pesquisa</a></li>
                         <li><a href="#">Acervo</a></li>
                         <li><a href="#">Videos</a></li>
@@ -33,12 +34,128 @@
                         <li><a href="#">Contato</a></li>
                     </ul>
                 </nav>
-<!--Final nav-->
+<!--final nav-->
             </header>
-<!--Final header-->
+<!--final header-->
+<!--Inicio Principal-->
+            <div id="principal">
+<!--inicio conteudo-->
+                <div id="conteudo">
+                    <section id="capa">
+                        <img src="img/museu.png">
+                    </section>
 
+                    <section id="postagens">
+                        <article id="video">
+                            <h3>Vídeo: Conheça o museu</h3>
+                            <iframe width="310" height="170" src="https://www.youtube.com/embed/RGUYb-hivrc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </article>
+
+                        <article id="mapa">
+                            <h3>Mapa: Encontre o museu</h3>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13815.31595724952!2d-51.22605432305462!3d-30.041763626393323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9519790e2579edf7%3A0xea30e050d37f417a!2sRio%20Grande%20do%20Sul%20Museum%20of%20Art!5e0!3m2!1sen!2sbr!4v1648406937995!5m2!1sen!2sbr" width="310" height="170" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </article>
+
+                        <article id="exposicoes">
+                            <h3>Exposiçoes</h3>
+                            <ul>
+                                <li>
+                                    <a href="#">Os assustadores insetos</a>
+                                </li>
+                                <li>
+                                    <a href="#">preguiça gigante</a>
+                                </li>
+                                <li>
+                                    <a href="#">tigre-dente-de-sabre</a>
+                                </li>
+                                <li>
+                                    <a href="#">dinossauros</a>
+                                </li>
+                                <li>
+                                    <a href="#">plantas</a>
+                                </li>
+                                <li>
+                                    <a href="#"><strong>Veja todos (69)</strong></a>
+                                </li>
+                            </ul>
+                        </article>
+
+                        <article id="historia">
+                            <h3>200anos de história</h3>
+                            <p>
+                                Pellentesque at porttitor urna, eget lobortis enim. 
+                                Aliquam rhoncus eros finibus massa maximus fermentum.
+                                Aliquam sodales, sapien et convallis elementum, nisl risus egestas metus, non interdum odio odio eu arcu.
+                                Fusce eget erat porta, mattis augue vel, ultricies tellus. Donec ligula sapien, feugiat vel bibendum nec, semper ac turpis. 
+                                Mauris vulputate risus urna, in commodo ex egestas eu. Nunc a ante nec ligula placerat sagittis.
+                            </p>
+                            <a href="#"><strong>Leia mais</strong></a>
+                        </article>
+                    </section>
+
+
+                </div>
+<!--final conteudo-->
+<!--inicio aside-->
+                <aside>
+                    <section id="depoimento">
+                        <img src="img/depoimento.png">
+                    </section>
+    <!--inicio seção visita-->
+                    <section id="visita">
+                        <h4>Faça uma visita</h4>
+                        <form>
+                            <fieldset>
+                                <legend>Selecione uma data</legend>
+
+                                <label form="data">Data</label>
+                                <input class="campo" type="text" id="data" value="dd/mm/aaaa">
+
+                                <label form="qtd">Qtd pessoas</label>
+                                <input class="campo" style="width: 30px;" type="text" id="qtd" value="1">
+                            </fieldset>
+
+                            <input class="botao" type="submit" value="Verificar disponibilidade">
+
+                        </form>
+                    </section>
+    <!--final seção visita-->
+    <!--inicio seção galeria-->
+                    <section id="galeria">
+                        <h4>Galeria de fotos</h4>
+                        <a href="">
+                            <img src="/img/imagem1.jpg" height="93" width="93" alt="descrição da imagem">
+                        </a>
+                        <a href="">
+                            <img src="/img/imagem2.jpg" height="93" width="93">
+                        </a>
+                        <a href="">
+                            <img src="/img/imagem3.jpg" height="93" width="93">
+                        </a>
+                        <a href="">
+                            <img src="/img/imagem4.jpg" height="93" width="93">
+                        </a>
+                    </section>
+    <!--final seção galeria-->
+                </aside>
+<!--final aside-->
+                <footer style="clear: both;">
+                    <p>
+                        <a href="#">Home</a>
+                        <a href="#">Exposições</a>
+                        <a href="#">Pesquisa</a>
+                        <a href="#">Acervo</a>
+                        <a href="#">Videos</a>
+                        <a href="#">Fotos</a>
+                        <a href="#">Contato</a>
+                    </p>
+                    <p>
+                        2019 <a href="#">Museu Nacional</a> - Todos os diritos reservados
+                    </p>
+                </footer>
+            </div>
+<!--final principal-->
         </div>
-<!--Final container-->
+<!--final container-->
     </body>
-
 </html>
